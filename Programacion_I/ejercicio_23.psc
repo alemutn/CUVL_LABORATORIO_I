@@ -12,6 +12,7 @@ Proceso sin_titulo
 	sumaParcial = 0;
 	minimoPositivo = 0;
 	maximoNegativo = 0;
+	minimoDelRango = 0;
 	
 	Escribir "Ingrese un número";
 	Leer num;
@@ -31,7 +32,7 @@ Proceso sin_titulo
 		FinSi
 		
 		Si num >= -17.3 y num <= 26.9 Entonces
-			si num < minimoDelRango Entonces
+			si num < minimoDelRango o minimoDelRango == 0 Entonces
 				minimoDelRango = num;
 			FinSi
 		FinSi
